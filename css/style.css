@@ -245,6 +245,59 @@ nav a:hover {
 	clear: both;
 }
 
+.inner-text {
+	position: relative;
+}
+
+.inner-text article {
+	position: absolute;
+	right: 30px;
+	bottom: 40px;
+}
+
+.inner-text .products {
+	position: absolute;
+	right: 950px;
+	bottom: 30px;
+}
+
+.inner-text article p {
+	display: inline-block;
+	color: #ffffff !important;
+	font-size: .8em;
+	font-weight: 700;
+}
+
+.inner-text span {
+	color: #ed5d49;
+}
+
+.inner-text article img {
+	width: 20px;
+	margin-left: 10px;
+	-webkit-transform:translateY(20%);
+}
+
+.inner-text .august-health {
+	position: absolute;
+	width: 700px;
+	bottom: 260px;
+	font-size: 1.2em;
+}
+
+.august-health .left {
+	float: left;
+}
+
+.august-health .right {
+	float: right;
+}
+
+.august-health i {
+	margin-left: 10px;
+	font-size: 1.4em;
+}
+
 .truck-lifestyle {
 	display: block;
 	background-color: #ffffff;
