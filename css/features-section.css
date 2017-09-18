@@ -95,24 +95,26 @@
 .row {
 	display: -webkit-flex;
     display: flex;
-	align-items: stretch;
+    width: 100%;
 }
 
 .fitness-first {
 	background-color: #ffffff;
-	width: calc(100%-780px);
+	padding: 10px;
+	max-width: 400px;
 	height: auto;
-	padding: 20px;
 }
 
 .fitness-first-img {
 	position: relative;
-
+	width: calc(100%-400px);
+	max-height: 394px;
+	overflow: hidden;
 }
 
-.fitness-first-img img {
-	width: calc(100%-400px);
-	height: auto;
+.fitness-first-img img:first-child {
+	max-width: 780px;
+	height: 394px;
 }
 
 .fitness-first-img img:last-child {
@@ -137,18 +139,21 @@
 
 .your-body {
 	background-color: #ffffff;
-	width: calc(100%-779px);
+	max-width: 401px;
 	height: auto;
-	padding: 20px;
+	padding: 10px;
 }
 
 .your-body-img {
 	position: relative;
+	width: calc(100%-401px);
+	height: 394px;
+	overflow: hidden;
 	
 }
 
-.your-body-img img {
-	width: calc(100%-401px);
+.your-body-img img:first-child {
+	max-width: 780px;
 	height: auto;
 }
 

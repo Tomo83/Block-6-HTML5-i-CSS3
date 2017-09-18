@@ -59,7 +59,7 @@
 
 .truck-lifestyle {
 	background-color: #ffffff;
-	width: calc(100%-779px);
+	max-width: 401px;
 	height: auto;
 	padding: 20px 40px;
 	margin-top: -3px;
@@ -89,7 +89,7 @@
 
 .summer-fun {
 	background-color: #a2ca28;
-	width: calc(100%-401px);
+	max-width: 779px;
 	height: auto;
 	padding: 50px;
 	margin-top: -3px;
@@ -127,16 +127,18 @@
 
 .get-involved {
 	background-color: #ffffff;
-	width: calc(100%-779px);
+	max-width: 779px;
 	height: auto;
 	padding: 20px 40px;
+	margin-top: -4px;
 }
 
 .improve-your {
 	background-color: #a2ca28;
-	width: calc(100%-401px);
+	max-width: 401px;
 	height: auto;
 	padding: 50px;
+	margin-top: -4px;
 }
 
 .improve-your h5 {
