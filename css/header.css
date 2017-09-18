@@ -29,7 +29,7 @@ header {
 
 }
 
-header:after {
+#banner-top:after {
 	content: "";
 	opacity: .5;
 	position: absolute;
