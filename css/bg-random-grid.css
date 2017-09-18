@@ -1,0 +1,146 @@
+/*random grid styles*/
+
+#bg-random-grid {
+	background-color: #fd634e;
+	width: 100%;
+	height: auto;
+}
+
+.random-grid {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.runners {
+	width: calc(100%-779px);
+	height: auto;
+}
+
+.runners img {
+    width: 100%;
+    height: auto;
+}
+
+.man-beach {
+	width: calc(100%-401px);
+	height: auto;
+}
+
+.man-beach {
+	position: relative;
+}
+
+.man-beach img {
+    width: 100%;
+    height: auto;
+}
+
+.man-beach p {
+	font-weight: 700;
+}
+
+
+.left {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+
+.right {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+.right i {
+	margin-left: 10px;
+}
+
+.truck-lifestyle {
+	background-color: #ffffff;
+	max-width: 401px;
+	height: auto;
+	padding: 20px 40px;
+	margin-top: -3px;
+}
+
+.truck-lifestyle h3,
+.get-involved h3 {
+	color: #a2ca28;
+	font-weight: 300;
+	font-size: 2em;
+	margin-top: 10px;
+}
+
+.truck-lifestyle h5,
+.get-involved h5 {
+	color: #ea5d4b;
+	font-weight: bolder;
+	margin-top: 30px;
+}
+
+.truck-lifestyle p,
+.get-involved p {
+	color: #777777;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.summer-fun {
+	background-color: #a2ca28;
+	max-width: 779px;
+	height: auto;
+	padding: 50px;
+	margin-top: -3px;
+	-webkit-box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
+}
+
+.summer-fun h3,
+.improve-your h3 {
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.grape {
+	width: calc(100%-401px);
+    height: auto;
+}
+
+.grape img {
+	width: 100%;
+	height: auto;
+}
+
+.mango {
+	width: calc(100%-779px);
+    height: auto;
+}
+
+.mango img {
+	width: 100%;
+	height: auto;
+}
+
+.get-involved {
+	background-color: #ffffff;
+	max-width: 779px;
+	height: auto;
+	padding: 20px 40px;
+	margin-top: -4px;
+}
+
+.improve-your {
+	background-color: #a2ca28;
+	max-width: 401px;
+	height: auto;
+	padding: 50px;
+	margin-top: -4px;
+}
+
+.improve-your h5 {
+	font-size: 1.2em;
+}
