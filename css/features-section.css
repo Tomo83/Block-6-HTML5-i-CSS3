@@ -11,7 +11,7 @@
 
 .features {
 	display: flex;
-	max-width: 1180px;
+	width: 80%;
 	height: auto;
 	margin: 0 auto !important;
 	padding-top: 100px;
@@ -61,7 +61,7 @@
 
 #left-right {
 	position: relative;
-	max-width: 1180px;
+	max-width: 80%;
 	height: auto;
 	margin: 0 auto;
 	padding-top: 200px;
@@ -95,19 +95,24 @@
 .row {
 	display: -webkit-flex;
     display: flex;
+	align-items: stretch;
 }
 
 .fitness-first {
 	background-color: #ffffff;
-	min-width: 400px;
-	max-height: 394px;
+	width: calc(100%-780px);
+	height: auto;
 	padding: 20px;
 }
 
 .fitness-first-img {
 	position: relative;
-	max-width: 780px;
-	max-height: 394px;
+
+}
+
+.fitness-first-img img {
+	width: calc(100%-400px);
+	height: auto;
 }
 
 .fitness-first-img img:last-child {
@@ -130,23 +135,21 @@
 	color: #f7614c;
 }
 
-.row-reverse {
-	display: -webkit-flex;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .your-body {
 	background-color: #ffffff;
-	min-width: 401px;
-	max-height: 394px;
+	width: calc(100%-779px);
+	height: auto;
 	padding: 20px;
 }
 
 .your-body-img {
 	position: relative;
-	max-width: 779px;
-	max-height: 394px;
+	
+}
+
+.your-body-img img {
+	width: calc(100%-401px);
+	height: auto;
 }
 
 .your-body-img img:last-child {

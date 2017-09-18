@@ -1,11 +1,42 @@
 /*footer styles*/
 
 footer {
+	position: relative;
 	width: 100%;
 	height: auto;
 	background-color: #0d1119;
-	margin: -100px auto 0 auto;
+	margin: -60px auto 0 auto;
 	padding-bottom: 530px;
+}
+
+#footer-top:before {
+	content: "";
+	position: absolute;
+	top: -90px;
+	right: 0;
+	width: 50%;
+	height: 60px;
+	background: #0d1119;
+	-webkit-transform: skew(0deg, -3deg);
+	-moz-transform: skew(0deg, -3deg);
+	-ms-transform: skew(0deg, -3deg);
+	-o-transform: skew(0deg, -3deg);
+	transform: skew(0deg, -3deg);
+}
+
+#footer-top:after {
+	content: "";
+	position: absolute;
+	top: -90px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: #0d1119;
+	-webkit-transform: skew(0deg, 2deg);
+	-moz-transform: skew(0deg, 2deg);
+	-ms-transform: skew(0deg, 2deg);
+	-o-transform: skew(0deg, 2deg);
+	transform: skew(0deg, 2deg);
 }
 
 #footer-about {

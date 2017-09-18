@@ -2,13 +2,14 @@
 
 #banner-bottom {
 	position: relative;
-	border-bottom: 100px solid #ea5d4b;
+	/*border-bottom: 100px solid #ea5d4b;*/
 }
 
 #banner-bottom img {
 	width: 100%;
 	height: auto;
 	text-align: center;
+	border-bottom: 100px solid #ea5d4b;
 }
 
 .banner-bottom-text {
@@ -26,7 +27,7 @@
 	margin-bottom: 30px;
 }
 
-#shapes {
+/*#shapes {
 	display: block;
 	position: relative;
 	width: 100%;
@@ -40,9 +41,9 @@
   margin-bottom: 6px;
   height: 90px;
   width: 100%;
-}
+}*/
 
-#black-shape:before {
+/*#black-shape:before {
   content: '';
   position: absolute;
   top: -139px;
@@ -64,9 +65,9 @@
   transform: skew(0deg, -3deg);
   -webkit-transform: skew(0deg, -3deg);
 
-}​
+}​*/
 
-#black-shape2 {
+/*#black-shape2 {
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -87,4 +88,4 @@
 	-ms-transform: skew(0deg, 1.5deg);
 	-o-transform: skew(0deg, 1.5deg);
 	transform: skew(0deg, 1.5deg);
-}
+}*/
