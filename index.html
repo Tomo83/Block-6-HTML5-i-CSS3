@@ -16,6 +16,13 @@
 
 	<!-- JavaScript font-awsome -->
 	<script src="https://use.fontawesome.com/c13337a5fc.js"></script>
+
+	<!-- FireBug -->
+	<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+
+
+
+	
 </head>
 <body>
 	<header id="banner-top">
@@ -23,9 +30,9 @@
 			<div id="logo">
 				<img src="img/icons/logo.png" alt="Logo">
 				<p>FITNESS</p>
-				<span></span>
+				<span></span><!-- /underline -->
 			</div><!-- /logo -->
-			<nav>
+			<nav id="nav">
 				<ul>
 					<li><a href="#">ABOUT</a></li>
 					<li><a href="#">HOW IT WORKS</a></li>
@@ -34,6 +41,18 @@
 					<li><a href="#">CONTACT</a></li>
 				</ul>
 			</nav>
+			<nav class="side-menu">
+				<ul>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">HOW IT WORKS</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+				<i class="fa fa-bars"></i>
+				
+			</nav>
+			
 			<div id="main-title">
 				<h1>FITNESS IN A CAN <span class="slash1">/</span></h1>
 				<p>YES YOU CAN <span class="slash2">/</span></p>
@@ -69,8 +88,8 @@
 		<section id="left-right">
 			<div class="row row-column">
 				<article class="fitness-first">
-					<h5>IT'S ALL ABOUT</h5>
-					<h3>FITNESS FIRST</h3>
+					<h3>IT'S ALL ABOUT</h3>
+					<p>FITNESS FIRST</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ea dolorem nihil quas cum delectus, magnam cumque dolorum vitae veniam!</p>
 					<a href="#">Read more</a>
 				</article><!-- /fitness-first -->
@@ -78,61 +97,61 @@
 					<img src="img/fitness-first.jpg" alt="">
 					<p><span>Active Users</span> (34)</p><img src="img/icons/logo.png" alt="logo">
 				</article>
-			</div><!-- /fitness-first-row -->
+			</div><!-- /row -->
 			<div class="row row-column">
 				<article class="your-body-img">
 					<img src="img/your-body.jpg" alt="">
 					<p>Products Used (658)</p><img src="img/icons/logo.png" alt="logo">
 				</article>
-				<article class="your-body">
-					<h5>LOVE YOUR</h5>
-					<h3>YOUR BODY</h3>
+				<article class="fitness-first">
+					<h3>LOVE YOUR</h3>
+					<p>YOUR BODY</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam illum blanditiis cumque veritatis minima assumenda dicta dolorem placeat delectus necessitatibus?</p>
 					<a href="#">Read more</a>
-				</article><!-- /your-body -->
-			</div><!-- /your-body-row -->
+				</article><!-- /fitness-first -->
+			</div><!-- /row -->
 		</section><!-- /left-right -->
 	</section><!-- /features-section -->
 	<section id="bg-random-grid">
 		<section class="random-grid">
 				<section class="row">
 					<article class="runners">
-						<img src="img/runners.jpg" alt="">
+						<img src="img/runners.jpg" alt="photo runners">
 					</article>
 					<article class="man-beach">
-						<img src="img/man-beach.jpg" alt="">
+						<img src="img/man-beach.jpg" alt="photo man on the beach">
 						<p class="left">24TH AUGUST</p>
 						<p class="right">HEALTH &amp; FITNESS<i class="fa fa-tag" aria-hidden="true"></i></p>
 					</article><!-- /big-grid -->			
 				</section><!-- /row -->
-				<section class="row row-column">
-					<article class="truck-lifestyle">
-						<h5>TRUCK YOUR</h5>
-						<h3>LIFESTYLE</h3>
+				<section class="truck-lifestyle row row-column">
+					<article>
+						<h3>TRUCK YOUR</h3>
+						<p>LIFESTYLE</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quidem rerum, modi provident, accusantium molestiae aperiam earum sint quasi.</p>
 					</article><!-- /truck-lifestyle -->
-					<article class="summer-fun">
+					<article>
 						<h3>SUMMER OF FUN</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quidem rerum, modi provident, accusantium molestiae aperiam earum sint quasi exercitationem.</p>
 					</article><!-- summer-fun -->
 				</section><!-- /row -->
-			<section class="row">
-				<div class="fruit">
-					<img src="img/grape.jpg" alt="photo runners">
-				</div>
-				<div class="fruit">
-					<img src="img/mango.jpg" alt="photo man on the beach">
-				</div>
+			<section class="row fruit">
+				<article class="grape">
+					<img src="img/grape.jpg" alt="photo grape">
+				</article>
+				<article class="mango">
+					<img src="img/mango.jpg" alt="photo mango">
+				</article>
 			</section><!-- /row -->
-			<section class="row row-column">
-				<article class="get-involved">
-					<h5>GET INVOLVED IN YOURSELF</h5>
-					<h3>LIFESTYLE</h3>
+			<section class="get-involved row row-column">
+				<article>
+					<h3>GET INVOLVED IN YOURSELF</h3>
+					<p>LIFESTYLE</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quidem rerum, modi provident, accusantium molestiae aperiam earum sint quasi exercitationem.</p>
 				</article><!-- /get-involved -->
 				<article class="improve-your">
-					<h5>IMPROVE YOUR</h5>
-					<h3>EATING HABITS</h3>
+					<h3>IMPROVE YOUR</h3>
+					<h4>EATING HABITS</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quidem rerum, modi provident, accusantium molestiae aperiam earum sint quasi exercitationem.</p>
 				</article><!-- /improve-your -->
 			</section><!-- /random-grid-text2 -->
@@ -141,7 +160,7 @@
 	<section id="banner-bottom">
 		<img src="img/man-alone.jpg" alt="">
 		<article class="banner-bottom-text">
-			<h4>We launch leaders with big ideas</h4>
+			<h6>We launch leaders with big ideas</h6>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
 			<p>Lorem ipsum dolor sit amet, consectetur !</p>
 		</article>
@@ -149,15 +168,15 @@
 	<footer id="footer-top">
 		<section id="footer-about">
 			<article class="footer-resources">
-				<h5>Resources</h5>
+				<h6>Resources</h6>
 				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. work-in-progress by dragging images into projects and sharable client group</p>
 			</article>
 			<article class="about-us">
-				<h5>About Us</h5>
+				<h6>About Us</h6>
 				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. work-in-progress by dragging images into projects and sharable client group</p>
 			</article>
 			<article class="stay-in-touch">
-				<h5>Stay in touch</h5>
+				<h6>Stay in touch</h6>
 				<ul>
 					<li><a href="#" class="facebook"><i class="flaticon-facebook-letter-logo"></i></a></li>
 					<li><a href="#" class="twitter"><i class="flaticon-twitter-black-shape"></i></a></li>
@@ -177,5 +196,9 @@
 			<p>Font generated by <a href="http://www.flaticon.com">flaticon.com</a>.<br> Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="003-facebook-letter-logo" href="https://www.flaticon.com/authors/simpleicon">SimpleIcon</a>, <a data-file="001-linkedin-letters" href="https://www.flaticon.com/authors/dave-gandy">Dave Gandy</a>, <a data-file="002-youtube-symbol" href="http://www.freepik.com">Freepik</a></p> 
 		</section>
 	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<script src="js/app.js"></script>
 </body>
 </html>

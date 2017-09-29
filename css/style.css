@@ -37,10 +37,6 @@ p {
 	width: 100%;
 	height: 100px;
 	background: #fd634e;
-	-webkit-transform: skew(0deg, -3deg);
-	-moz-transform: skew(0deg, -3deg);
-	-ms-transform: skew(0deg, -3deg);
-	-o-transform: skew(0deg, -3deg);
 	transform: skew(0deg, -3deg);
 }
 
@@ -94,10 +90,15 @@ nav a {
 	color: #ffffff;
 	font-size: .8em;
 	font-weight: 700;
+	transition: .3s;
 }
 
 nav a:hover {
-	color: #a2ca28;
+	color: #ea5d4b;
+}
+
+.side-menu {
+	display: none;
 }
 
 /*end - navigation*/
@@ -128,7 +129,6 @@ nav a:hover {
 	position: relative;
 	background-color: #a2ca28;
 	width: 100%;
-	height: auto;
 	z-index: 1;
 	margin-top: -3px;
 }
@@ -136,14 +136,12 @@ nav a:hover {
 .features {
 	display: flex;
 	max-width: 1180px;
-	height: auto;
 	margin: 0 auto !important;
 	padding-top: 100px;
 }
 
 .features article {
 	width: 25%;
-	height: auto;
 	margin: 30px 0;
 	padding: 10px;
 }
@@ -186,29 +184,23 @@ nav a:hover {
 #left-right {
 	position: relative;
 	max-width: 1180px;
-	height: auto;
 	margin: 0 auto;
 	padding-top: 200px;
 	text-align: center;
 }
 
-#left-right h3 {
+h3 {
+	color: #ea5d4b;
+	font-weight: bolder;
+	font-size: .9em;
+	margin-top: 30px;
+}
+
+.fitness-first p:first-of-type {
 	color: #a2ca28;
 	font-weight: 300;
 	font-size: 2em;
 	margin-top: 10px;
-}
-
-#left-right h5 {
-	color: #ea5d4b;
-	font-weight: bolder;
-	margin-top: 30px;
-}
-
-#left-right p {
-	color: #777777;
-	margin-top: 50px;
-	margin-bottom: 20px;
 }
 
 #left-right a {
@@ -217,7 +209,6 @@ nav a:hover {
 }
 
 .row {
-	display: -webkit-flex;
     display: flex;
     width: 100%;
 }
@@ -226,7 +217,25 @@ nav a:hover {
 	background-color: #ffffff;
 	padding: 10px;
 	max-width: 400px;
-	height: auto;
+}
+
+.fitness-first p:nth-child(3) {
+	color: #777777;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.fitness-first-img p {
+	position: absolute;
+	bottom: 60px;
+    right: 76px;
+    font-size: .9em;
+	color: #ffffff !important;
+	letter-spacing: 0;
+}
+
+.fitness-first-img span {
+	color: #f7614c;
 }
 
 .fitness-first-img {
@@ -248,26 +257,6 @@ nav a:hover {
 	width: 20px;
 }
 
-.fitness-first-img p {
-	position: absolute;
-	bottom: 43px;
-    right: 76px;
-    font-size: .9em;
-	color: #ffffff !important;
-	letter-spacing: 0;
-}
-
-.fitness-first-img span {
-	color: #f7614c;
-}
-
-.your-body {
-	background-color: #ffffff;
-	max-width: 401px;
-	height: auto;
-	padding: 10px;
-}
-
 .your-body-img {
 	position: relative;
 	width: calc(100% - 401px);
@@ -278,7 +267,6 @@ nav a:hover {
 
 .your-body-img img:first-child {
 	max-width: 780px;
-	height: auto;
 }
 
 .your-body-img img:last-child {
@@ -290,7 +278,7 @@ nav a:hover {
 
 .your-body-img p {
 	position: absolute;
-	bottom: 27px;
+	bottom: 45px;
     left: 41px;
 	color: #ffffff !important;
 	font-size: .9em;
@@ -302,12 +290,10 @@ nav a:hover {
 #bg-random-grid {
 	background-color: #fd634e;
 	width: 100%;
-	height: auto;
 }
 
 .random-grid {
 	max-width: 1180px;
-	height: auto;
 	margin: 0 auto;
 }
 
@@ -352,79 +338,113 @@ nav a:hover {
 	margin-left: 10px;
 }
 
-.truck-lifestyle {
-	background-color: #ffffff;
-	max-width: 33.9%;
-	height: auto;
-	padding: 20px 40px;
-	margin-top: -3px;
+.truck-lifestyle h3:first-of-type {
+	color: #ea5d4b;
+	font-weight: bolder;
+	font-size: .9em;
+	margin-top: 30px;
 }
 
-.truck-lifestyle h3,
-.get-involved h3 {
+.truck-lifestyle article:last-child h3 {
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 30px;
+	margin-top: 0;
+	color: #ffffff;
+}
+
+.truck-lifestyle article:first-child p:last-child {
+	color: #777777;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.truck-lifestyle article:last-child p {
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 30px;
+	color: #ffffff;
+}
+
+.truck-lifestyle p:first-of-type {
 	color: #a2ca28;
 	font-weight: 300;
 	font-size: 2em;
 	margin-top: 10px;
 }
 
-.truck-lifestyle h5,
-.get-involved h5 {
+.truck-lifestyle article:first-child {
+	background-color: #ffffff;
+	max-width: 33.9%;
+	padding: 20px 40px;
+	margin-top: -4px;
+}
+
+.truck-lifestyle article:last-child {
+	background-color: #a2ca28;
+	max-width: 66.1%;
+	padding: 50px;
+	margin-top: -4px;
+	box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
+}
+
+.truck-lifestyle h2 {
 	color: #ea5d4b;
 	font-weight: bolder;
 	margin-top: 30px;
 }
 
-.truck-lifestyle p,
-.get-involved p {
-	color: #777777;
-	margin-top: 50px;
-	margin-bottom: 20px;
-}
-
-.summer-fun {
-	background-color: #a2ca28;
-	max-width: 66.1%;
-	height: auto;
-	padding: 50px;
-	margin-top: -3px;
-	-webkit-box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
-}
-
-.summer-fun h3,
-.improve-your h3 {
-	font-size: 2em;
-	font-weight: 400;
-	margin-bottom: 30px;
-}
-
-.fruit {
-	max-width: 100%;
-}
-
-.fruit img {
-	max-width: 100%;
-}
-
-.get-involved {
+.get-involved article:first-child {
 	background-color: #ffffff;
 	width: 66.1%;
-	padding: 20px 40px;
+	padding: 50px;
 	margin-top: -4px;
+	color: #777777;
 }
 
-.improve-your {
+.get-involved article:last-child {
 	background-color: #a2ca28;
 	width: 33.9%;
 	padding: 50px;
 	margin-top: -4px;
+	color: #ffffff !important;
 }
 
-.improve-your h5 {
-	font-size: 1.2em;
+.get-involved p:first-of-type {
+	color: #a2ca28;
+	font-weight: 300;
+	font-size: 2em;
+	margin-top: 10px;
 }
+
+.improve-your h3 {
+	color: #ffffff;
+	font-size: 1.1em;
+}
+
+.improve-your h4 {
+	color: #ffffff;
+	font-size: 2em;
+	font-weight: 300 !important;
+}
+
+.improve-your p {
+	color: #ffffff !important;
+	font-size: 1em !important;
+}
+
+.fruit img {
+	width: 100%;
+}
+
+.grape {
+	max-width: 100%
+}
+
+.mango {
+	max-width: 100%
+}
+
 
 /*banner bottom styles*/
 
@@ -434,22 +454,21 @@ nav a:hover {
 
 #banner-bottom img {
 	width: 100%;
-	height: auto;
 	text-align: center;
 	border-bottom: 100px solid #ea5d4b;
 }
 
 .banner-bottom-text {
 	position: absolute;
-	top: 10px;
+	top: 0;
 	left: 50%;
 	transform:translateX(-50%);
 	text-align: center;
 	z-index: 5;
 }
 
-#banner-bottom h4 {
-	font-size: 2em;
+#banner-bottom h6 {
+	font-size: 2em !important;
 	padding-top: 200px;
 	margin-bottom: 30px;
 }
@@ -459,7 +478,6 @@ nav a:hover {
 footer {
 	position: relative;
 	width: 100%;
-	height: auto;
 	background-color: #0d1119;
 	margin: -60px auto 0 auto;
 	padding-bottom: 530px;
@@ -473,10 +491,6 @@ footer {
 	width: 50%;
 	height: 60px;
 	background: #0d1119;
-	-webkit-transform: skew(0deg, -3deg);
-	-moz-transform: skew(0deg, -3deg);
-	-ms-transform: skew(0deg, -3deg);
-	-o-transform: skew(0deg, -3deg);
 	transform: skew(0deg, -3deg);
 }
 
@@ -488,10 +502,6 @@ footer {
 	width: 100%;
 	height: 80px;
 	background: #0d1119;
-	-webkit-transform: skew(0deg, 2deg);
-	-moz-transform: skew(0deg, 2deg);
-	-ms-transform: skew(0deg, 2deg);
-	-o-transform: skew(0deg, 2deg);
 	transform: skew(0deg, 2deg);
 }
 
@@ -504,7 +514,6 @@ footer {
 
 #footer-about article {
 	width: 35%;
-	height: auto;
 	float: left;
 	padding: 30px 0 30px 10px;
 }
@@ -513,7 +522,7 @@ footer {
 	width: 30%;
 }
 
-#footer-about h5 {
+#footer-about h6 {
 	font-size: 1.1em;
 	margin-bottom: 20px;
 }
@@ -563,7 +572,6 @@ a.linkedin {
 #newsletter {
 	clear: both;
 	width: 100%;
-	height: auto;
 	margin: 0 auto;
 }
 

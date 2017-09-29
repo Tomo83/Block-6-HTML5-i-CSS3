@@ -1,11 +1,63 @@
 /*media queries*/
 
-@media all and (min-width: 320px) and (max-width: 1024px) {
-*, *:after, *:before {
-	box-sizing:border-box;
-	margin: 0;
-	padding: 0;
+@media all and (max-width: 1024px) {
+
+header i {
+	position: absolute;
+	top: 40px;
+	right: 30px;
+	font-size: 1.5em !important;
 }
+
+#nav {
+	display: none;
+}
+
+#main-title h1 {
+	font-size: 1.5em;
+}
+
+.side-menu {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: -250px;
+	width: 250px;
+	height: 100%;
+	background-color: #0D1119;
+	z-index: 9;
+	margin: 0 auto;
+	transition: .3s;
+}
+
+.side-menu ul {
+	display: block;
+	padding-top: 10px;
+}
+
+.side-menu li {
+	clear: both;
+	padding: 10px 0;
+}
+
+.side-menu a {
+	margin-left: 0 !important;
+}
+
+.active {
+	right: 0;
+}
+
+.side-menu i {
+	position: absolute;
+	top: 30px;
+	right: 270px;
+	font-size: 2em !important;
+	z-index: 6;
+	color: #EA5D4B;
+	transition: .3s;
+}
+
 .features {
 	display: flex;
 	flex-direction: column;
@@ -13,11 +65,14 @@
 
 .features article {
 	width: 100%;
-	height: auto;
+	text-align: center;
+}
+
+.button-features span {
+	margin: 0 auto;
 }
 
 .row-column {
-	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -27,78 +82,71 @@
 	background-color: #ffffff;
 	padding: 20px;
 	max-width: 100%;
-	height: auto;
 }
 
 .fitness-first-img {
 	position: relative;
 	width: 100%;
-	height: auto;
 	overflow: hidden;
 }
 
 .fitness-first-img img:first-child {
 	min-width: 100%;
-	height: auto;
-}
-
-.your-body {
-	background-color: #ffffff;
-	max-width: 100%;
-	height: auto;
-	padding: 20px;
-	margin-top: -3px;
 }
 
 .your-body-img {
 	position: relative;
 	width: 100%;
-	height: auto;
 	overflow: hidden;
 	margin-top: -1px;
 }
 
 .your-body-img img:first-child {
 	min-width: 100%;
-	height: auto;
 }
 
 .truck-lifestyle {
 	background-color: #ffffff;
 	min-width: 100%;
+	text-align: center;
 }
 
-.summer-fun {
+.truck-lifestyle article:first-child {
+	min-width: 100%;
+}
+
+.truck-lifestyle article:last-child {
 	background-color: #a2ca28;
 	min-width: 100%;
-	-webkit-box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 66px -9px rgba(0,0,0,0.75);
 }
 
 .get-involved {
+	text-align: center;
+}
+
+.get-involved article:first-child {
 	background-color: #ffffff;
-	width: 100%;
-	padding: 20px 40px;
+	min-width: 100%;
 }
 
 .improve-your {
 	background-color: #a2ca28;
-	width: 100%;
+	min-width: 100%;
 	padding: 50px;
 }
 
 .banner-bottom-text {
 	position: absolute;
-	top: 10px;
+	top: 0;
 	left: 50%;
 	transform:translateX(-50%);
 	text-align: center;
 	z-index: 5;
 }
 
-#banner-bottom h4 {
-	font-size: 1.2em;
+#banner-bottom h6 {
+	font-size: 1em !important;
 	padding-top: 20px;
 	margin-bottom: 30px;
 }
@@ -107,9 +155,9 @@
 footer {
     position: relative;
     width: 100%;
-    height: auto;
     margin: -60px auto 0 auto;
     padding-bottom: 530px;
+    text-align: center;
 }
 
 #footer-about {
@@ -121,7 +169,6 @@ footer {
 
 #footer-about article {
 	width: 100%;
-	height: auto;
 	float: left;
 	padding: 30px 0 30px 10px;
 }
@@ -130,14 +177,23 @@ footer {
 	width: 100%;
 }
 
+.stay-in-touch ul {
+	display: block;
+	width: 30%;
+	margin: 0 auto;
+}
+
 #newsletter {
-	width: 80%;
-	height: auto;
+	width: 100%;
 	margin: 0 auto;
 }
 
 #newsletter form {
-	margin-top: 30px;
+	margin: 30px auto 0 auto;
 	color: #777777;
+}
+
+#newsletter input, button {
+	margin: 10px;
 }
 }
