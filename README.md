@@ -1,2 +1,2 @@
-# Block-6-HTML5-i-CSS3
+# PSD to HTML
 https://tomaszkurzacz.github.io/PSD-to-HTML-Website/
