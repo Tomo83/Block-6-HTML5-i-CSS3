@@ -1,29 +1,22 @@
-$(document).ready(function () {
-    /*slider*/
-    var slideIndex = 0;
-    slider();
+'use strict';
 
-    function slider() {
-        var i;
-        var slide = document.getElementsByClassName('slide');
+var button = document.querySelector('nav button');
+var menu = document.querySelector('nav ul');
+var mHeight = 380 + 'px';
 
-        for (i = 0; i < slide.length; i++) {
-            slide[i].style.display = 'none';
-        }
+var show = function show() {
+  menu.style.height = mHeight;
+};
 
-        slideIndex++;
-        if (slideIndex > slide.length) {
-            slideIndex = 1;
-        }
-        slide[slideIndex - 1].style.display = 'block';
-        setTimeout(slider, 6000);
-    }
+var hide = function hide() {
+  menu.style.height = 0 + 'px';
+};
 
-    /*side menu*/
-    $('.fa').click(function () {
-        $('.side-menu').toggleClass('active');
-        $('i.fa').toggleClass('fa-bars').toggleClass('fa-times');
-        open = false;
-    });
-
-});
+var toggle = function toggle() {
+  if (menu.style.height === mHeight) {
+    hide();
+  } else {
+    show();
+  }
+};
+button.addEventListener('click', toggle, false);
